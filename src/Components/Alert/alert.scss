@@ -1,0 +1,42 @@
+.alert{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  &__message{
+    top: 10px;
+    display: flex;
+    padding: 10px 45px;
+    column-gap: 10px;
+    border-radius: 10px;
+    background-color: #8774E1;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    animation: startAlert 2s ease-in-out;
+  }
+}
+
+@media (max-width: 425px) {
+  .alert__message{
+    padding: 10px 25px;
+  }
+}
+
+@keyframes startAlert {
+  0%{
+    top: -200px;
+  }
+  30%{
+    top: 10px;
+  }
+  90%{
+    top: 10px;
+  }
+  100%{
+    top: -100px;
+  }
+}

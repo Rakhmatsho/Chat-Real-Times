@@ -1,0 +1,35 @@
+.header{
+  background:  #212121;
+  z-index: 3;
+  position: sticky;
+  left: 0;
+  top: 0;
+  box-shadow: 0 10px 4px rgba(255, 255, 255, 0.09);
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    .appName{
+      color: #ffffff;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      color: #ffffff;
+      span{
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+    .regiseterLogo{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+  .exitAcc{
+    cursor: pointer;
+  }
+}

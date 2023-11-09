@@ -1,0 +1,70 @@
+.userForm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+.userForm__buttons {
+  display: flex;
+  column-gap: 30px;
+}
+.userForm__form {
+  display: flex;
+  background-color: #212121;
+  padding: 50px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 10;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+.userForm__form input {
+  width: 100%;
+  font-size: 16px;
+  color: #212121;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+}
+.userForm__form input:focus {
+  background-color: #8774E1;
+  color: #ffffff;
+}
+.userForm__form button {
+  padding: 10px 20px;
+  background-color: #8774E1;
+  border-radius: 15px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.userForm .blackBack {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #00000080;
+}
+
+@media (max-width: 425px) {
+  .userForm__form {
+    padding: 40px;
+  }
+
+  .userForm__buttons {
+    column-gap: 15px;
+  }
+  .userForm__buttons button {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=userlog.css.map */
